@@ -55,6 +55,8 @@ class MainActivity : Activity() {
             ),
 
         ))
+
+        productsList.layoutManager = LinearLayoutManager(this)
     }
 
 }
