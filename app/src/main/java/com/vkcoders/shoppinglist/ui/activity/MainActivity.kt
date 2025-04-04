@@ -52,8 +52,6 @@ class MainActivity : Activity() {
         setContentView(R.layout.main_screen)
 
         val productsList : RecyclerView = findViewById<RecyclerView>(R.id.listProducts)
-
         productsList.adapter = ProductListAdapter(context = this, products = mockedProductList)
     }
-
 }
