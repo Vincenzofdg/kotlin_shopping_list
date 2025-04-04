@@ -11,6 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShoppingList"
-        tools:targetApi="31" />
+        tools:targetApi="31">
+        <!--Declaring Activity and android:exported="true" so other applications can call or Activity-->
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <!--To say that is the main Activity-->
+                <action android:name="android.intent.action.MAIN" />
+                <!--To say that this action must be initiated when we start the app-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>
